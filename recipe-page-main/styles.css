@@ -1,0 +1,144 @@
+*{
+    border: 0%;
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+html    {
+    background-color: hsl(330, 100%, 98%);
+}
+
+body {
+  display:flex;
+  place-content: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 700px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin: 5rem;
+    margin-bottom: 5rem;
+    font-family: 'Outfit';
+    font-size: 1.15rem;
+    color:  hsl(30, 10%, 34%);
+
+}
+
+img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+h1, h3, h4, h5 {
+    font-family:'Young Serif';
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: hsl(24, 5%, 18%);
+    font-weight: 500;
+}
+
+ul, ol, li, p {
+    margin-bottom: 0.5rem;
+}
+ul, ol, p{
+    margin-bottom: 1.5  rem;
+}
+
+.preparation {
+   background-color:  hsl(332, 51%, 32%, 0.021);
+   padding: 0rem;
+   border-radius: 0.5rem;
+   margin-bottom: 1.5rem;
+
+}
+
+.preparation-header {
+    color:  hsl(332, 51%, 32%);
+    margin-bottom: 1rem;
+
+}
+
+.preparation-content, .Instruction-content, .Ingredient-content  {
+    padding-left: 3rem;
+}
+
+.preparation-content li::marker {
+    color:hsl(332, 51%, 32%);
+}
+
+.Instruction-content li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.Instruction-content strong {
+    color: rgba(0, 0, 0, 0.788);
+}
+
+h3, h4, h5 {
+    color:  hsl(14, 45%, 36%);
+    font-weight: 500;
+}
+
+hr {
+    border-top: 1px solid hsl(30, 10%, 34%, 0.5);
+    margin-bottom: 1rem ;
+}
+
+.Nutri-content li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.Nutri-content strong {
+    color: hsl(14, 45%, 36%);
+}
+
+
+@media (max-width: 375px) {
+    html    {
+    background-color: white;
+}
+
+.Nutri-content li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+img {
+    width: 375px;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 700px;
+    padding: 2rem;
+    padding-top: 0%;
+    padding-left: 2rem;
+    border-radius: 1.5rem;
+    margin-top: 0%;
+    margin-bottom: 5rem;
+    font-family: 'Outfit';
+    font-size: 1rem;
+    color:  hsl(30, 10%, 34%);
+
+}
+h1, h2, h3, h4, h5, p, ul, ol {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+}
